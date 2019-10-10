@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="logo">BootDonalds</h1>
+    <div id="menuPrincipal">
+        <button class="boton" onclick="mostrarMenu()">Menús</button>
+        <button class="boton" onclick="mostrarBurger()">Hamburguesas</button>
+        <button class="boton" onclick="mostrarBebida()">Bebidas</button>
+        <button class="boton" onclick="mostrarTotal(), calculoTotal()">Cesta</button>
+        <button class="boton" onclick="mostrarPedido()">Pedido Anterior</button>
+    </div>
+
+    <div class="colocacion" id="menu">
+        <h1 class="logo">BootDonalds</h1>
+        <div class="botonVolver">
+            <button class="volver" class="boton" onclick="volverMenu()">Volver</button>
+        </div>
+        <div style="width: 700px">
+            <div>
+                <button class="boton" onclick="menu('Grand Big Boot')">Menú Grand Big Boot</button>
+                <button class="boton" onclick="menu('Big Boot')">Menú Big Boot</button>
+                <button class="boton" onclick="menu('BootPollo')">Menú BootPollo</button>
+                <button class="boton" onclick="menu('Cuarto de libra')">Menú Cuarto de libra</button>
+                <button class="boton" onclick="menu('BootRoyal Deluxe')">Menú BootRoyal Deluxe</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="colocacion" id="burger">
+        <h1 class="logo">BootDonalds</h1>
+        <div class="botonVolver">
+            <button class="volver" class="boton" onclick="volverBurger()">Volver</button>
+        </div>
+        <div>
+            <button class="boton" onclick="burger('Grand Big Boot')">Grand Big Boot</button>
+            <button class="boton" onclick="burger('Big Boot')">Big Boot</button>
+            <button class="boton" onclick="burger('BootPollo')">BootPollo</button>
+            <button class="boton" onclick="burger('Cuarto de libra')">Cuarto de libra</button>
+            <button class="boton" onclick="burger('BootRoyal Deluxe')">BootRoyal Deluxe</button>
+        </div>
+
+    </div>
+
+    <div class="colocacion" id="bebida">
+        <h1 class="logo">BootDonalds</h1>
+        <div class="botonVolver">
+            <button class="volver" class="boton" onclick="volverBebida()">Volver</button>
+        </div>
+        <div>
+            <button class="boton" onclick="bebidas('CocaCola')">Coca Cola</button>
+            <button class="boton" onclick="bebidas('Fanta')">Fanta</button>
+            <button class="boton" onclick="bebidas('Agua')">Agua</button>
+            <button class="boton" onclick="bebidas('Cerveza')">Cerveza</button>
+        </div>
+
+    </div>
+    <div class="colocacion" id="total">
+        <h1 class="logo">BootDonalds</h1>
+        <div class="botonVolver">
+            <button class="volver" class="boton" onclick="volverTotal()">Volver</button>
+        </div>
+        <div>
+            <h1>BootDonalds</h1>
+            <p>Total pedido:</p>
+            <p id="pedidoTotal"></p>
+            <p id="precioTotal"></p>
+        </div>
+        <button onclick="reset()">Finalizar</button>
+
+    </div>
+    <div id="recuperacion" class="colocacion">
+        <h1 class="logo">BootDonalds</h1>
+        <button class="volver" onclick="pedidoAnterior()">Pedido anterior</button>
+        <button class="volver" class="boton" onclick="volverAnterior()">Volver</button>
+        <div>
+            <h1>BootDonalds</h1>
+            <p>Total pedido Recuperado:</p>
+            <p id="pedidoTotalRecuperado"></p>
+            <p id="precioTotalRecuperado"></p>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

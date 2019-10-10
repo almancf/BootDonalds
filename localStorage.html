@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nombre" id="nombre">
+    <button onclick="guardarNombre()">Guardar</button>
+​
+    <script>
+        let identidad = JSON.parse( window.localStorage.getItem('identidad'));
+        console.log(identidad);
+        function guardarNombre() {
+            let nombre = document.getElementById('nombre').value;
+            let valor = {
+                nombre: 'Iker',
+                edad: 39
+            };
+            window.localStorage.setItem('identidad', JSON.stringify(valor));
+        }
+    </script>
+</body>

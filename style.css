@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color: rgb(228, 47, 47);
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    background-color: rgb(228, 47, 47);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#burger {
+    display: none;
+    position: fixed;
+    background-color: rgb(228, 47, 47);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#bebida {
+    display: none;
+    position: fixed;
+    background-color: rgb(228, 47, 47);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#total {
+    display: none;
+    position: fixed;
+    background-color: rgb(228, 47, 47);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#recuperacion {
+    display: none;
+    position: fixed;
+    background-color: rgb(228, 47, 47);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+#menuPrincipal {
+    background-color: rgb(228, 47, 47);
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-top: 10px;
+}
+
+#menuPrincipal button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 13px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .5s ease;
+    border-radius: 5px;
+
+}
+
+.boton:hover {
+    background-color: rgb(129, 93, 232);
+    color: white;
+}
+
+
+.colocacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+
+}
+
+.colocacion div {
+    margin: 10px;
+
+}
+
+.colocacion button {
+    padding: 30px 40px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.volver {
+    align-self: flex-start;
+    justify-self: flex-start;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 13px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .5s ease;
+    border-radius: 5px;
+}
+
+.volver:hover {
+    background-color: rgb(129, 93, 232);
+    color: white;
+}
+
+.botonVolver {
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.logo {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 7rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
